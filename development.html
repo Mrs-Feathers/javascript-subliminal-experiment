@@ -1,0 +1,1546 @@
+<!DOCTYPE html> 
+<head> 
+<!link rel="apple-touch-icon" href="dvicon2.png" />
+<!meta name="Xapple-mobile-web-app-capable" content="yes" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+<title>The Gift</title> 
+
+<!meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" /> 
+<!meta name="apple-mobile-web-app-capable" content="yes" /> 
+<!meta name="apple-mobile-web-app-status-bar-style" /> 
+<!link rel="apple-touch-startup-image" href="splashscreen.png" /> 
+<!link rel="apple-touch-icon-precomposed" href="apple-touch-icon-precomposed.png" /> 
+
+</head> 
+<body> 
+<style type="text/css">
+table.sample {
+	border-width: 0px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+    align: center;
+    width: 400px;
+	text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 4px;
+}
+table.sample th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: outset;
+	border-color: black;
+	background-color: rgb(255, 250, 250);
+	-moz-border-radius: ;
+}
+table.sample td {
+	border-width: 1px;
+	padding: 4px;
+	border-style: outset;
+	border-color: black;
+	background-color: rgb(255, 250, 250);
+	-moz-border-radius: ;
+}
+table.sample td:hover {
+    background: #d0aafd;
+	color: #339;
+}
+
+table.panel {
+	border-width: 0px;
+	border-spacing: 2px;
+	border-style: outset;
+	border-color: gray;
+	border-collapse: separate;
+	background-color: white;
+    align: center;
+    width: 98%;
+	text-align: center;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
+	font-size: 12px;
+	margin: 4px;
+}
+table.panel th {
+	border-width: 1px;
+	padding: 4px;
+	border-style: outset;
+	border-color: black;
+	background-color: rgb(255, 250, 250);
+	-moz-border-radius: ;
+}
+table.panel td {
+	border-width: 1px;
+	padding: 4px;
+	border-style: outset;
+	border-color: black;
+	background-color: rgb(255, 250, 250);
+	-moz-border-radius: ;
+}
+textarea.styled {
+	width: 75%;
+	height: 120px;
+	border: 3px solid #cccccc;
+	padding: 5px;
+	font-family: Tahoma, sans-serif;
+	background-position: bottom right;
+	background-repeat: no-repeat;
+}
+.hidden {
+    color:#000000;
+}
+.samplebutton {
+	-moz-box-shadow:inset 0px 0px 4px 2px #caefab;
+	-webkit-box-shadow:inset 0px 0px 4px 2px #caefab;
+	box-shadow:inset 0px 0px 4px 2px #caefab;
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #77d42a), color-stop(1, #5cb811) );
+	background:-moz-linear-gradient( center top, #77d42a 5%, #5cb811 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#77d42a', endColorstr='#5cb811');
+	background-color:#77d42a;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #268a16;
+	display:inline-block;
+	color:#306108;
+	font-family:arial;
+	font-size:15px;
+	font-weight:bold;
+	padding:32px 12px;
+	text-decoration:none;
+	text-shadow:1px 1px 0px #aade7c;
+}.samplebutton:hover {
+	background:-webkit-gradient( linear, left top, left bottom, color-stop(0.05, #5cb811), color-stop(1, #77d42a) );
+	background:-moz-linear-gradient( center top, #5cb811 5%, #77d42a 100% );
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5cb811', endColorstr='#77d42a');
+	background-color:#5cb811;
+}.samplebutton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+    <div id="body" class="container"> 
+    </div>
+<P>
+
+<script type="text/javascript">
+
+//JSON START
+JSON=JSON||{};(function(){function f(n){return n<10?'0'+n:n;}
+if(typeof Date.prototype.toJSON!=='function'){Date.prototype.toJSON=function(key){return this.getUTCFullYear()+'-'+
+f(this.getUTCMonth()+1)+'-'+
+f(this.getUTCDate())+'T'+
+f(this.getUTCHours())+':'+
+f(this.getUTCMinutes())+':'+
+f(this.getUTCSeconds())+'Z';};String.prototype.toJSON=Number.prototype.toJSON=Boolean.prototype.toJSON=function(key){return this.valueOf();};}
+var cx=/[\u0000\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,escapable=/[\\\"\x00-\x1f\x7f-\x9f\u00ad\u0600-\u0604\u070f\u17b4\u17b5\u200c-\u200f\u2028-\u202f\u2060-\u206f\ufeff\ufff0-\uffff]/g,gap,indent,meta={'\b':'\\b','\t':'\\t','\n':'\\n','\f':'\\f','\r':'\\r','"':'\\"','\\':'\\\\'},rep;function quote(string){escapable.lastIndex=0;return escapable.test(string)?'"'+string.replace(escapable,function(a){var c=meta[a];return typeof c==='string'?c:'\\u'+('0000'+a.charCodeAt(0).toString(16)).slice(-4);})+'"':'"'+string+'"';}
+function str(key,holder){var i,k,v,length,mind=gap,partial,value=holder[key];if(value&&typeof value==='object'&&typeof value.toJSON==='function'){value=value.toJSON(key);}
+if(typeof rep==='function'){value=rep.call(holder,key,value);}
+switch(typeof value){case'string':return quote(value);case'number':return isFinite(value)?String(value):'null';case'boolean':case'null':return String(value);case'object':if(!value){return'null';}
+gap+=indent;partial=[];if(Object.prototype.toString.apply(value)==='[object Array]'){length=value.length;for(i=0;i<length;i+=1){partial[i]=str(i,value)||'null';}
+v=partial.length===0?'[]':gap?'[\n'+gap+
+partial.join(',\n'+gap)+'\n'+
+mind+']':'['+partial.join(',')+']';gap=mind;return v;}
+if(rep&&typeof rep==='object'){length=rep.length;for(i=0;i<length;i+=1){k=rep[i];if(typeof k==='string'){v=str(k,value);if(v){partial.push(quote(k)+(gap?': ':':')+v);}}}}else{for(k in value){if(Object.hasOwnProperty.call(value,k)){v=str(k,value);if(v){partial.push(quote(k)+(gap?': ':':')+v);}}}}
+v=partial.length===0?'{}':gap?'{\n'+gap+partial.join(',\n'+gap)+'\n'+
+mind+'}':'{'+partial.join(',')+'}';gap=mind;return v;}}
+if(typeof JSON.stringify!=='function'){JSON.stringify=function(value,replacer,space){var i;gap='';indent='';if(typeof space==='number'){for(i=0;i<space;i+=1){indent+=' ';}}else if(typeof space==='string'){indent=space;}
+rep=replacer;if(replacer&&typeof replacer!=='function'&&(typeof replacer!=='object'||typeof replacer.length!=='number')){throw new Error('JSON.stringify');}
+return str('',{'':value});};}
+if(typeof JSON.parse!=='function'){JSON.parse=function(text,reviver){var j;function walk(holder,key){var k,v,value=holder[key];if(value&&typeof value==='object'){for(k in value){if(Object.hasOwnProperty.call(value,k)){v=walk(value,k);if(v!==undefined){value[k]=v;}else{delete value[k];}}}}
+return reviver.call(holder,key,value);}
+text=String(text);cx.lastIndex=0;if(cx.test(text)){text=text.replace(cx,function(a){return'\\u'+
+('0000'+a.charCodeAt(0).toString(16)).slice(-4);});}
+if(/^[\],:{}\s]*$/.test(text.replace(/\\(?:["\\\/bfnrt]|u[0-9a-fA-F]{4})/g,'@').replace(/"[^"\\\n\r]*"|true|false|null|-?\d+(?:\.\d*)?(?:[eE][+\-]?\d+)?/g,']').replace(/(?:^|:|,)(?:\s*\[)+/g,''))){j=eval('('+text+')');return typeof reviver==='function'?walk({'':j},''):j;}
+throw new SyntaxError('JSON.parse');};}}());if(!Object.prototype.toJSONString){Object.prototype.toJSONString=function(filter){return JSON.stringify(this,filter);};Object.prototype.parseJSON=function(filter){return JSON.parse(this,filter);};}
+//JSON END
+
+//MD5 Start
+var MD5=function(string){function RotateLeft(lValue,iShiftBits){return(lValue<<iShiftBits)|(lValue>>>(32-iShiftBits));}
+function AddUnsigned(lX,lY){var lX4,lY4,lX8,lY8,lResult;lX8=(lX&0x80000000);lY8=(lY&0x80000000);lX4=(lX&0x40000000);lY4=(lY&0x40000000);lResult=(lX&0x3FFFFFFF)+(lY&0x3FFFFFFF);if(lX4&lY4){return(lResult^0x80000000^lX8^lY8);}
+if(lX4|lY4){if(lResult&0x40000000){return(lResult^0xC0000000^lX8^lY8);}else{return(lResult^0x40000000^lX8^lY8);}}else{return(lResult^lX8^lY8);}}
+function F(x,y,z){return(x&y)|((~x)&z);}
+function G(x,y,z){return(x&z)|(y&(~z));}
+function H(x,y,z){return(x^y^z);}
+function I(x,y,z){return(y^(x|(~z)));}
+function FF(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(F(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);};function GG(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(G(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);};function HH(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(H(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);};function II(a,b,c,d,x,s,ac){a=AddUnsigned(a,AddUnsigned(AddUnsigned(I(b,c,d),x),ac));return AddUnsigned(RotateLeft(a,s),b);};function ConvertToWordArray(string){var lWordCount;var lMessageLength=string.length;var lNumberOfWords_temp1=lMessageLength+8;var lNumberOfWords_temp2=(lNumberOfWords_temp1-(lNumberOfWords_temp1%64))/64;var lNumberOfWords=(lNumberOfWords_temp2+1)*16;var lWordArray=Array(lNumberOfWords-1);var lBytePosition=0;var lByteCount=0;while(lByteCount<lMessageLength){lWordCount=(lByteCount-(lByteCount%4))/4;lBytePosition=(lByteCount%4)*8;lWordArray[lWordCount]=(lWordArray[lWordCount]|(string.charCodeAt(lByteCount)<<lBytePosition));lByteCount++;}
+lWordCount=(lByteCount-(lByteCount%4))/4;lBytePosition=(lByteCount%4)*8;lWordArray[lWordCount]=lWordArray[lWordCount]|(0x80<<lBytePosition);lWordArray[lNumberOfWords-2]=lMessageLength<<3;lWordArray[lNumberOfWords-1]=lMessageLength>>>29;return lWordArray;};function WordToHex(lValue){var WordToHexValue="",WordToHexValue_temp="",lByte,lCount;for(lCount=0;lCount<=3;lCount++){lByte=(lValue>>>(lCount*8))&255;WordToHexValue_temp="0"+lByte.toString(16);WordToHexValue=WordToHexValue+WordToHexValue_temp.substr(WordToHexValue_temp.length-2,2);}
+return WordToHexValue;};function Utf8Encode(string){string=string.replace(/\r\n/g,"\n");var utftext="";for(var n=0;n<string.length;n++){var c=string.charCodeAt(n);if(c<128){utftext+=String.fromCharCode(c);}
+else if((c>127)&&(c<2048)){utftext+=String.fromCharCode((c>>6)|192);utftext+=String.fromCharCode((c&63)|128);}
+else{utftext+=String.fromCharCode((c>>12)|224);utftext+=String.fromCharCode(((c>>6)&63)|128);utftext+=String.fromCharCode((c&63)|128);}}
+return utftext;};var x=Array();var k,AA,BB,CC,DD,a,b,c,d;var S11=7,S12=12,S13=17,S14=22;var S21=5,S22=9,S23=14,S24=20;var S31=4,S32=11,S33=16,S34=23;var S41=6,S42=10,S43=15,S44=21;string=Utf8Encode(string);x=ConvertToWordArray(string);a=0x67452301;b=0xEFCDAB89;c=0x98BADCFE;d=0x10325476;for(k=0;k<x.length;k+=16){AA=a;BB=b;CC=c;DD=d;a=FF(a,b,c,d,x[k+0],S11,0xD76AA478);d=FF(d,a,b,c,x[k+1],S12,0xE8C7B756);c=FF(c,d,a,b,x[k+2],S13,0x242070DB);b=FF(b,c,d,a,x[k+3],S14,0xC1BDCEEE);a=FF(a,b,c,d,x[k+4],S11,0xF57C0FAF);d=FF(d,a,b,c,x[k+5],S12,0x4787C62A);c=FF(c,d,a,b,x[k+6],S13,0xA8304613);b=FF(b,c,d,a,x[k+7],S14,0xFD469501);a=FF(a,b,c,d,x[k+8],S11,0x698098D8);d=FF(d,a,b,c,x[k+9],S12,0x8B44F7AF);c=FF(c,d,a,b,x[k+10],S13,0xFFFF5BB1);b=FF(b,c,d,a,x[k+11],S14,0x895CD7BE);a=FF(a,b,c,d,x[k+12],S11,0x6B901122);d=FF(d,a,b,c,x[k+13],S12,0xFD987193);c=FF(c,d,a,b,x[k+14],S13,0xA679438E);b=FF(b,c,d,a,x[k+15],S14,0x49B40821);a=GG(a,b,c,d,x[k+1],S21,0xF61E2562);d=GG(d,a,b,c,x[k+6],S22,0xC040B340);c=GG(c,d,a,b,x[k+11],S23,0x265E5A51);b=GG(b,c,d,a,x[k+0],S24,0xE9B6C7AA);a=GG(a,b,c,d,x[k+5],S21,0xD62F105D);d=GG(d,a,b,c,x[k+10],S22,0x2441453);c=GG(c,d,a,b,x[k+15],S23,0xD8A1E681);b=GG(b,c,d,a,x[k+4],S24,0xE7D3FBC8);a=GG(a,b,c,d,x[k+9],S21,0x21E1CDE6);d=GG(d,a,b,c,x[k+14],S22,0xC33707D6);c=GG(c,d,a,b,x[k+3],S23,0xF4D50D87);b=GG(b,c,d,a,x[k+8],S24,0x455A14ED);a=GG(a,b,c,d,x[k+13],S21,0xA9E3E905);d=GG(d,a,b,c,x[k+2],S22,0xFCEFA3F8);c=GG(c,d,a,b,x[k+7],S23,0x676F02D9);b=GG(b,c,d,a,x[k+12],S24,0x8D2A4C8A);a=HH(a,b,c,d,x[k+5],S31,0xFFFA3942);d=HH(d,a,b,c,x[k+8],S32,0x8771F681);c=HH(c,d,a,b,x[k+11],S33,0x6D9D6122);b=HH(b,c,d,a,x[k+14],S34,0xFDE5380C);a=HH(a,b,c,d,x[k+1],S31,0xA4BEEA44);d=HH(d,a,b,c,x[k+4],S32,0x4BDECFA9);c=HH(c,d,a,b,x[k+7],S33,0xF6BB4B60);b=HH(b,c,d,a,x[k+10],S34,0xBEBFBC70);a=HH(a,b,c,d,x[k+13],S31,0x289B7EC6);d=HH(d,a,b,c,x[k+0],S32,0xEAA127FA);c=HH(c,d,a,b,x[k+3],S33,0xD4EF3085);b=HH(b,c,d,a,x[k+6],S34,0x4881D05);a=HH(a,b,c,d,x[k+9],S31,0xD9D4D039);d=HH(d,a,b,c,x[k+12],S32,0xE6DB99E5);c=HH(c,d,a,b,x[k+15],S33,0x1FA27CF8);b=HH(b,c,d,a,x[k+2],S34,0xC4AC5665);a=II(a,b,c,d,x[k+0],S41,0xF4292244);d=II(d,a,b,c,x[k+7],S42,0x432AFF97);c=II(c,d,a,b,x[k+14],S43,0xAB9423A7);b=II(b,c,d,a,x[k+5],S44,0xFC93A039);a=II(a,b,c,d,x[k+12],S41,0x655B59C3);d=II(d,a,b,c,x[k+3],S42,0x8F0CCC92);c=II(c,d,a,b,x[k+10],S43,0xFFEFF47D);b=II(b,c,d,a,x[k+1],S44,0x85845DD1);a=II(a,b,c,d,x[k+8],S41,0x6FA87E4F);d=II(d,a,b,c,x[k+15],S42,0xFE2CE6E0);c=II(c,d,a,b,x[k+6],S43,0xA3014314);b=II(b,c,d,a,x[k+13],S44,0x4E0811A1);a=II(a,b,c,d,x[k+4],S41,0xF7537E82);d=II(d,a,b,c,x[k+11],S42,0xBD3AF235);c=II(c,d,a,b,x[k+2],S43,0x2AD7D2BB);b=II(b,c,d,a,x[k+9],S44,0xEB86D391);a=AddUnsigned(a,AA);b=AddUnsigned(b,BB);c=AddUnsigned(c,CC);d=AddUnsigned(d,DD);}
+var temp=WordToHex(a)+WordToHex(b)+WordToHex(c)+WordToHex(d);return temp.toLowerCase();}
+//MD5 END
+
+
+String.prototype.rot13 = function(){
+    return this.replace(/[a-zA-Z]/g, function(c){
+        return String.fromCharCode((c <= "Z" ? 90 : 122) >= (c = c.charCodeAt(0) + 13) ? c : c - 26);
+    });
+};
+
+String.prototype.encrypt = function() {
+    var chars = "1&2*3456 !7#8$9%0^()[]{}\"\\:-qwertyuiopasdfghjklQWERTYUIOPASDFGHJKLZXCVBNM;'zxcvbnm,.";
+    var original = this;
+    var newstr = "";
+    var prev_index = 10; //this is an arbitrary number, but it has to be a constant
+    var newindex = 0;
+    
+    for (var i=0;i<original.length;i++) {
+        newindex = (chars.indexOf(original[i])+(chars.length/2))%chars.length;
+        while (newindex < 0) newindex += chars.length;
+        newstr += chars[newindex];
+        prev_index = newindex;
+    }
+     
+    return newstr;
+};
+
+String.prototype.encrypt_password = function(password) {
+    var chars = "1&2*3456 !7#8$9%0^()[]{}\"\\:-qwertyuiopasdfghjklQWERTYUIOPASDFGHJKLZXCVBNM;'zxcvbnm,.";
+    var original = this;
+    var newstr = "";
+    var prev_index = 10; //this is an arbitrary number, but it has to be a constant
+    var newindex = 0;
+    
+    var i=0; //index of original string
+    var k=0; //index of password
+    
+    //Return an unencrypted string if the password is blank
+    if (typeof password == "undefined") return this;
+    if (password == "") return this;
+    if (password.length == 0) return this;
+    
+    while (i < original.length) {
+        newindex = (chars.indexOf(original[i]) + chars.indexOf(password[k])) % chars.length;
+
+        newstr += chars[newindex];
+        
+        i++;
+        k++;
+        
+        if (k >= password.length) k = 0;
+    }
+     
+    return newstr;
+};
+
+String.prototype.decrypt_password = function(password) {
+    var chars = "1&2*3456 !7#8$9%0^()[]{}\"\\:-qwertyuiopasdfghjklQWERTYUIOPASDFGHJKLZXCVBNM;'zxcvbnm,.";
+    var original = this;
+    var newstr = "";
+    var prev_index = 10; //this is an arbitrary number, but it has to be a constant
+    var newindex = 0;
+    
+    var i=0; //index of original string
+    var k=0; //index of password
+    
+    //Return an unencrypted string if the password is blank
+    if (typeof password == "undefined") return this;
+    if (password == "") return this;
+    if (password.length == 0) return this;
+    
+    while (i < original.length) {
+        newindex = (chars.indexOf(original[i]) - chars.indexOf(password[k])) % chars.length;
+        while (newindex < 0) newindex = newindex + chars.length
+        
+        newstr += chars[newindex];
+        
+        i++;
+        k++;
+        
+        if (k >= password.length) k = 0;
+    }
+     
+    return newstr;
+}
+
+var initSequence = 0;
+
+var centerDiv = function(div) {
+    if (typeof div == "undefined") return;
+        
+    var menu_width = div.offsetWidth;
+    if (menu_width > 1000) menu_width = 150;
+    
+    var menu_height = div.offsetHeight;
+    var windowWidth = window.innerWidth/2;
+    var new_x = div.offsetWidth;
+    var menu_x = Math.floor((windowWidth - menu_width/2));
+    var menu_y = window.innerHeight / 2;
+    
+    //div.style.position = "absolute";
+    //div.style.top = menu_y + "px";
+    //div.style.left = menu_x + "px";
+    
+//    div.style.position = "relative";
+    div.style.marginLeft = "auto";
+    div.style.marginRight = "auto";
+    div.style.marginTop = "auto";
+    div.style.marginBottom = "auto";
+    div.style.margin = "0 auto";
+    
+    /*
+    console.log("centerDiv, menu_width=" + menu_width+ " menu_height=" + menu_height + " menu_x=" + menu_x);
+    console.log("   windowWidth          =" + windowWidth);
+    console.log("   div.style.left       =" + div.style.left);
+    console.log("   div.style.width      =" + div.style.width);
+    console.log("   div.style.offsetWidth=" + div.style.offsetWidth);
+    console.log("   div.offsetWidth      =" + div.offsetWidth);
+    console.log("   menu_width           =" + menu_width);
+    console.log("   new_x                =" + new_x);
+    //*/
+}
+
+var Trial = function() {
+    this.startTime;
+    this.cueDisplayTime;
+    this.phase = -1;
+                                // 1 - waiting for user to orient
+                                // 2 - showing cue
+                                // 3 - showing samples
+    this.running = 0;
+    this.orientFrame = 0;
+    
+    this.orientDiv;
+    this.cueDiv;
+    this.samplesDiv;
+    
+    this.options = [];
+    this.correctAnswer = -1;
+    this.optionContexts = [];
+    this.sampleContext;
+    
+    this.feedbackStartTime;
+    this.result = -1;
+    this.cueFrames = 0;
+    this.cueCircleRadius = 24;
+    this.cueNumberDisplayTime = 0;
+    
+    this.cueProbabilityDiff = 0.1;
+    
+    //this.colorval = 230;
+    
+    this.start = function() {
+        this.startTime = new Date();
+        
+        this.numCorrect = 0;
+        this.numTrials = 0;
+        
+        var str = "";
+        
+        //create the divs that are important for the trial
+        str += "<div id=orient></div>";
+        str += "<div id=cue></div>";
+        str += "<div id=samples></div>";
+        str += "<div id=feedback></div>";
+        
+        document.getElementById("body").innerHTML = str;
+        
+        this.orientDiv = document.getElementById("orient");
+        this.cueDiv = document.getElementById("cue");
+        this.samplesDiv = document.getElementById("samples");
+        
+        str = "";
+        
+        str = "<p>&nbsp;<p><input type=button value='begin' onmousedown='training.trialBlock.trial.orient()'>";
+        orient.innerHTML = str;
+        
+        str = "<canvas id=cuecanvas width=50 height=50>";
+        this.cueDiv.innerHTML = str;
+        this.sampleContext = document.getElementById("cuecanvas").getContext("2d");
+        
+        orient.style.zIndex = 10; //bring this in front
+        cue.style.zIndex = -1;
+        this.samplesDiv.style.zIndex = 1;
+        
+        centerDiv(orient);        
+        centerDiv(cue);
+        
+        this.running = 1; //this makes sure that trial.tic() is called
+        this.phase = 1; //waiting for use to orient
+        
+        if (typeof code.options == "undefined") {
+            code.options = [];
+            
+            code.options.push(1);
+            code.options.push(2);
+            code.options.push(3);
+            
+            //need to figure out how to select the sample
+        }
+        
+        this.reorderOptions();
+        this.correctAnswer = code.options[0];
+        this.reorderOptions();
+        
+        console.log("Trial.start()");
+    }
+    
+    this.orient = function() {
+        
+        
+        document.getElementById("orient").innerHTML = "";
+    
+        this.curDisplayTime = new Date();
+        this.phase = 2;
+        this.orientFrame = 1;
+        
+        
+        this.cueDisplayTime = null;
+        this.cueFrames = 0;
+        
+        this.cueNumberDisplayStartTime = Math.floor(Math.random()*400) + 300;
+        this.cueNumberDisplayStopTime = this.cueNumberDisplayStartTime + 10;
+        console.log("trial.orient, phase = " + this.phase);
+        console.log("   cueNumberDisplayStartTime=" + this.cueNumberDisplayStartTime);
+        console.log("   cueNumberDisplayStopTime =" + this.cueNumberDisplayStopTime);
+        
+        this.sampleContext.font = '20px sans-serif';
+        
+        mainLoopInterval = 5; //10 gets about 73-77 fps
+                              // 5 gets about 132-147 fps
+                              
+    }
+    
+    this.reorderOptions = function() {
+        code.options.sort(function() {return (Math.random() - 0.5);});
+    }
+    
+    this.presentOptions = function() {
+        var str = "";
+        this.optionContexts = [];
+        
+        str += "<table border=0 padding=10 id=optionstable><tr>";
+        for (var i = 0; i < code.options.length ; i++) {
+            str += "<td>";
+            str += "<canvas id=samplebutton" + i + " onmousedown='training.trialBlock.trial.selectOption(" + i + ")' width=50 height=50>";
+            str += "</td>";
+        }
+        str += "</tr></table>";
+        
+        document.getElementById("samples").innerHTML = str;
+        
+        
+        //Get contexts for canvases 
+        for (var i = 0; i < code.options.length ; i++) {
+            this.optionContexts.push(document.getElementById("samplebutton"+i).getContext("2d"));
+        }
+        
+        //draw Options
+        for (var i = 0; i < code.options.length ; i++) {
+            var c = this.optionContexts[i];
+            var num = code.options[i];
+            
+            console.log("drawing option " + i + " num=" + num);
+            
+            //c.getContext("2d");
+            c.fillStyle="#FFFFFF";
+            c.strokeRect(0,0,50,50);
+            c.fillStyle="#FF00FF";
+            
+            if (num == "undefined" || num == 1) {
+                //one in the center
+                c.fillRect(23,23,5,5); //center
+            } else if (num == 2) {
+                //left and right
+                c.fillRect(14,23,5,5);
+                c.fillRect(31,23,5,5);
+            } else if (num == 3) {
+                //triforce
+                c.fillRect(23,14,5,5); //top center
+                c.fillRect(14,31,5,5); //bottom left
+                c.fillRect(31,31,5,5); //bottom right
+            } else if (num == 4) {
+                //square
+                c.fillRect(14,14,5,5); //top left
+                c.fillRect(31,14,5,5); //bottom right
+                c.fillRect(14,31,5,5); //bottom left
+                c.fillRect(31,31,5,5); //bottom right
+            } else if (num == 5) {
+                //cross
+                c.fillRect(23,14,5,5); //top center
+                c.fillRect(14,23,5,5); //center left
+                c.fillRect(23,23,5,5); //center
+                c.fillRect(31,23,5,5); //bottom left
+                c.fillRect(23,31,5,5); //bottom center
+            }
+        }
+        
+        centerDiv(document.getElementById("optionstable"));
+    }
+    
+    this.selectOption = function(index) {
+        
+        if (this.correctAnswer == -1) return;
+        if (this.correctAnswer == code.options[index]) {
+            this.result = 1;
+            //console.log("CORRECT=" + this.numCorrect);
+            this.showFeedback(1); //correct
+            
+        } else {
+            this.result = 0;
+            this.showFeedback(0); //incorrect
+        }
+    }
+    
+    this.showFeedback = function(status) {
+        this.feedbackStartTime = new Date();
+        
+        document.getElementById("samples").innerHTML = "";
+    
+        if (status == 1) {
+            document.getElementById("feedback").innerHTML = "CORRECT!";
+        } else if (status == 0) {
+            document.getElementById("feedback").innerHTML = "wrong!";
+        }
+        
+        centerDiv(document.getElementById("feedback"));
+        
+        this.phase = 5;
+    }
+    
+    this.cueTic = function() {
+        // first 250 ms, get participant's attention with a shrinking circle
+        //        50 ms, show cue
+        //       700 ms, show mask
+        this.cueFrames++;
+        
+        this.sampleContext.fillStyle="#FFFFFF";
+        this.sampleContext.fillRect(0,0,50,50);
+        this.sampleContext.strokeStyle="#000000";
+        this.sampleContext.fillStyle="#000000";
+        
+        var now = new Date();
+        var diff = 0;
+        
+        if (this.cueDisplayTime != null) {
+            diff = now.getTime() - this.cueDisplayTime.getTime();
+        } else {
+            
+            this.cueNumberDisplayStartTime = Math.floor(Math.random()*800);
+        }
+        
+        if (diff < 250) {
+            //get user's attention
+            
+            this.sampleContext.beginPath();
+            this.sampleContext.arc(25, 25, this.cueCircleRadius, 0, Math.PI*2, true); 
+            this.sampleContext.closePath();
+            this.sampleContext.stroke();
+            if (this.cueCircleRadius > 2 ) this.cueCircleRadius--;
+            
+            if (this.cueDisplayTime == null) this.cueDisplayTime = new Date();
+            return;
+        } 
+                
+        var data = this.sampleContext.getImageData(0,0,50,50);
+        //data = this.sampleContext.createImageData(50,50);
+        var x = 0;
+        var y = 0;
+        var diff = this.cueProbabilityDiff;
+        var backgroundProb = .50 - diff/2;
+        var adjprob = 0.50 + diff/2;
+        var prob = backgroundProb;
+        var num = this.correctAnswer;
+        
+        //console.log("orientTic colorval=" + this.colorval);
+        
+        for (x = 0; x < data.width ; x++) {
+            for (y = 0; y < data.height ; y++) {
+                prob = backgroundProb;
+                
+                if (num == "undefined" || num == 1) {
+                    if ((x >= 23 && x <= 28) && (y >= 23 && y <= 28)) prob = adjprob;
+                } else if (num == 2) {
+                    if ((x >= 14 && x <= 19) && (y >= 23 && y <= 28)) prob = adjprob;
+                    if ((x >= 31 && x <= 36) && (y >= 23 && y <= 28)) prob = adjprob;
+                } else if (num == 3) {
+                    //triforce
+                    if ((x >= 23 && x <= 28) && (y >= 14 && y <= 19)) prob = adjprob; //top center
+                    if ((x >= 14 && x <= 19) && (y >= 31 && y <= 36)) prob = adjprob; //bottom left
+                    if ((x >= 31 && x <= 36) && (y >= 31 && y <= 36)) prob = adjprob; //bottom right
+                } else if (num == 4) {
+                    //square
+
+                    if ((x >= 14 && x <= 19) && (y >= 14 && y <= 19)) prob = adjprob; //top left
+                    if ((x >= 14 && x <= 19) && (y >= 31 && y <= 36)) prob = adjprob; //bottom left
+                    if ((x >= 14 && x <= 19) && (y >= 31 && y <= 36)) prob = adjprob; //bottom left
+                    if ((x >= 31 && x <= 36) && (y >= 31 && y <= 36)) prob = adjprob; //bottom right
+                } else if (num == 5) {
+                    //cross
+                    
+                    if ((x >= 23 && x <= 28) && (y >= 14 && y <= 19)) prob = adjprob;
+                    if ((x >= 14 && x <= 19) && (y >= 23 && y <= 28)) prob = adjprob;
+                    if ((x >= 23 && x <= 28) && (y >= 23 && y <= 28)) prob = adjprob;
+                    if ((x >= 31 && x <= 36) && (y >= 23 && y <= 28)) prob = adjprob;
+                    if ((x >= 23 && x <= 28) && (y >= 31 && y <= 36)) prob = adjprob;
+                }
+
+                
+                var index = (x + y * data.width) * 4;
+                if (Math.random() < prob) {
+                    //white
+                    //data.data[index] = 255;
+                    //data.data[index+1] = 255;
+                    //data.data[index+2] = 255;
+                    //data.data[index+3] = 255;
+                } else {
+                    data.data[index] = 0;
+                    data.data[index+1] = 0;
+                    data.data[index+2] = 0;
+                    data.data[index+3] = 255;
+                }
+                //if (Math.random() >.99) console.log("     index="+index + " data.length=" + data.data.length);
+            }
+        }
+        this.sampleContext.putImageData(data,0,0);
+        
+        if (this.cueDisplayTime == null) this.cueDisplayTime = new Date();
+        
+    }
+    
+    this.tic = function() {
+        //console.log("Trial.tic, phase=" + this.phase);
+        
+        if (this.phase == 1) {
+            //wait for user to click orient (this happens in this.orient)
+            //
+        } else if (this.phase == 2) {
+            //show cue
+            //this.phase = 3; Make this a 1-s delay
+            this.cueTic();
+            var now = new Date();
+            var diff = now.getTime() - this.cueDisplayTime.getTime();
+            if (diff >= 1000) {
+                this.phase = 3;
+                //do we also hide the cue? or willit happen automatically
+                this.sampleContext.fillStyle="#FFFFFF";
+                this.sampleContext.fillRect(0,0,50,50);
+                var fps = this.cueFrames * 1000 / diff;
+                console.log("trial.cue, cueFrames=" + this.cueFrames);
+                console.log("                 fps=" + fps);
+                mainLoopInterval = 100; //restore the main loop interval to its default value
+            }
+        } else if (this.phase == 3) {
+            //present choice options
+            this.presentOptions();
+            this.phase = 4;
+        } else if (this.phase == 4) {
+            //wait for user to make choice in selectOption
+        } else if (this.phase == 5) {
+            //show feedback
+            var now = new Date();
+            
+            if (now.getTime() - this.feedbackStartTime.getTime() >= 1000) {
+                this.phase = 6;
+            }
+        } else if (this.phase == 6) {
+            //wait here for the trial block to recognize that the trial is over
+            //wait
+        }
+    }
+}
+
+var TrialBlock = function() {
+    this.numTrials = 10;
+    this.currentTrial = -1;
+    this.results = [];
+    
+    this.trial;
+    this.done = 0;
+    this.initialized = 0;
+    this.totalCorrect = 0;
+    this.totalTrials = 0;
+    this.percentCorrect =0;
+    
+    this.cueProbabilityDiff = 0.2;
+    this.cueProbabilityDiffs = [];
+    
+    this.start = function() {
+        this.trial = new Trial();
+        this.trial.start();
+        this.initialized = 1;
+        
+        this.trial.cueProbabilityDiff = this.cueProbabilityDiff;
+        this.cueProbabilityDiffs.push(this.trial.cueProbabilityDiff);
+    }
+    this.examineProgress = function() {
+        if (this.cueProbabilityDiffs.length >= 15) {
+            var len = 5;
+            var start = 0;
+            var mid = this.cueProbabilityDiffs.length - (len*2 + 1);
+            var current = this.cueProbabilityDiffs.length - (len + 1);
+            
+            var sum = 0;
+            var num = 0;
+            var start_average = 0;
+            var mid_average = 0;
+            var end_average = 0;
+            
+            sum = 0;
+            num = 0;
+            for (var i = start; i < start+len; i++) {
+                sum += this.cueProbabilityDiffs[i]; 
+                num++;
+            }
+            start_average = sum / num;
+            
+            sum = 0;
+            num = 0;
+            for (var i = mid; i < mid+len; i++) {
+                sum += this.cueProbabilityDiffs[i]; 
+                num++;
+            }
+            mid_average = sum / num;
+            
+            sum = 0;
+            num = 0;
+            for (var i = current; i < current+len; i++) {
+                sum += this.cueProbabilityDiffs[i]; 
+                num++;
+            }
+            current_average = sum / num;
+            
+            console.log("Progress: ");
+            console.log("   start_average  =" + start_average);
+            console.log("   mid_average    =" + mid_average);
+            console.log("   current_average=" + current_average);
+        }
+    }
+    this.tic = function() {
+        if (this.initialized == 0) return;
+        if (this.done == 1) return;
+        
+        if (typeof this.trial != "undefined") {
+            if (this.trial.phase >= 6) {
+                if (this.trial.result != -1) this.results.push(this.trial.result);
+                if (this.trial.result == 1) this.cueProbabilityDiff -= 0.005;
+                else if (this.trial.result == 0) this.cueProbabilityDiff += 0.010;
+                
+                this.totalCorrect = 0;
+                
+                for (var i = 0; i < this.results.length; i++) {
+                    if (this.results[i] == 1) {
+                        this.totalCorrect++;
+                        
+                    }
+                }
+                this.totalTrials = this.results.length;
+                
+                this.percentCorrect = Math.floor(this.totalCorrect * 100 / this.totalTrials);
+                
+                    
+                console.log("Beginning again, current percent correct=" + this.percentCorrect);
+                console.log("   this.totalCorrect    =" + this.totalCorrect);
+                console.log("   this.totalTrials     =" + this.totalTrials);
+                    
+                if (this.currentTrial >= this.numTrials) {
+                    this.done = 0;
+                    this.currentTrial = 0;
+                    return;
+                }
+                console.log("Starting trial " + this.currentTrial);
+                console.log("   cueProbability=" + this.cueProbabilityDiff);
+                
+                this.trial = new Trial();
+                this.trial.start();
+                this.trial.cueProbabilityDiff = this.cueProbabilityDiff;
+                this.cueProbabilityDiffs.push(this.trial.cueProbabilityDiff);
+                this.examineProgress();
+            } else {
+                this.trial.tic();
+            }
+        }
+    }
+}
+
+var Training = function() {
+
+    this.startTime;
+    this.behaviors;
+    this.behaviorsErrors;
+    this.running;
+    this.typingKeyPresses = 0;
+    this.mantra;
+    this.promptPresentationTime;
+    this.phase = -1;
+                // 1 = showInstructions
+                // 2 = start
+    this.trialBlock;
+    
+    this.initiate = function() {
+        //this.showInstructions();
+    }
+    this.getTime = function(zone, success) {
+        var url = 'http://json-time.appspot.com/time.json?tz=' + zone,
+        ud = 'json' + (+new Date());
+
+        window[ud]= function(o){
+            success && success(new Date(o.datetime), o);
+        };
+        document.getElementsByTagName('head')[0].appendChild((function(){
+            var s = document.createElement('script');
+            s.type = 'text/javascript';
+            s.src = url + '&callback=' + ud;
+            return s;
+            })());
+    }
+    
+    this.showInstructions = function() {
+        this.phase = 1;
+        
+        this.getTime('GMT', function(time){
+            log.serverShowInstructionsTime = time;
+        });
+        
+        var innerhtml="";
+        
+        innerhtml += "<div id='stockinstructionsdiv'></div><p>";
+        innerhtml += "<div id='custominstructionsdiv'></div><p>";
+        innerhtml += "<center><input type=button value='Begin' onmousedown='activity.start()'></center>";
+        
+        document.getElementById("body").innerHTML = innerhtml;
+        
+        if (options.M == -1 || options.MstockMessages == 1) {
+            var inst = activity.generateInstructions();
+            document.getElementById("stockinstructionsdiv").innerHTML = inst;
+            //console.log("activity.showInstructions: generateInstructions()=" + inst);
+        } else {
+            //console.log("activity.showInstructions, options.MstockMessages=" + options.MstockMessages);
+        }
+        if (options.M != -1 && options.Mcustominstructions.length > 0) {
+            document.getElementById("custominstructionsdiv").innerHTML = options.Mcustominstructions;
+            //console.log("activity.showInstructions: custom instructions["+options.Mcustominstructions+"]");
+        } else {
+            //console.log("activity.showInstructions: no custom instructions");
+        }
+    }
+    
+    this.generateInstructions = function() {
+        var str = "";
+        
+        str += "<u>Instructions</u><br><hr><p>";
+        
+        if (options.T == 1) {
+            str += "During your exercise, you will type the messages that appear. They must be entered as precisely as they appear. ";
+            
+            //Duration
+            if (options.TCboth != -1) {
+                str += "The activity will terminate automatically after you have repeated it " + options.TCbehavior;
+                str += " times and have been working for at least " + options.TCtime + " seconds. ";
+                str += "If you terminate the activity early by clicking Quit, you will have failed. ";
+            } else if (options.TCeither != -1) {
+                str += "The activity will terminate automatically after you have repeated it " + options.TCbehavior;
+                str += " times or have been working for at least " + options.TCtime + " seconds, whichever comes first. ";
+                str += "If you terminate the activity early by clicking Quit, you will have failed. ";
+            } else if (options.TCbehavior != -1) {
+                str += "The activity will terminate automatically after you perform the task " + options.TCbehavior + " times. ";
+                str += "If you terminate the activity early by clicking Quit, you will have failed. ";
+            } else if (options.TCtime != -1) {
+                str += "The activity will terminate automatically after " + options.TCtime + " seconds. ";
+                str += "If you terminate the activity early by clicking Quit, you will have failed. ";
+            }
+            
+            //Pace Requirements
+            if (options.PR != 0) {
+                if (options.PRmaximumTime != -1) {
+                    str += "You have " + options.PRmaximumTime + " s to complete each activity. ";
+                } 
+                if (options.PRresetTimeOnFail == 1 || options.PRresetBehaviorOnFail == 1) {
+                    str += "Each time you fail to complete the activity in the allotted time, your progress will reset. "; 
+                }
+                if (options.PRendTaskOnFail == 1) {
+                    str += "The exercise will terminate and you will have failed the exercise if you do not meet these pace requirements. ";
+                }
+            }
+        } else if (options.T == 2) {
+            str += "During your exercise, you will click boxes as they appear. ";
+        } 
+        
+        return "<center>" + str + "</center>";
+    }
+    
+    this.start = function() {
+        console.log("Training.start");
+        this.phase = 2;
+        
+        //Initialize start variables
+        this.startTime = new Date();
+        this.behaviors = 0;
+        this.behaviorsErrors = 0;
+        this.running = 1;
+        
+        this.trialBlock = new TrialBlock();
+        
+        log = new Object();
+        
+        this.getTime('GMT', function(time){
+            log.serverStartTime = time;
+        });
+        
+        if (typeof log.clientStartTimeStamp == "undefined") {
+            log.clientStartTimeStamp = this.startTime.toDateString() + " " + this.startTime.toTimeString();
+        }
+        
+        this.trialBlock.start();
+    }
+    
+    this.end = function() {
+        //Ending an activity is a two-step process
+        //first we ask the user to wait 5 s in order to fetch GMT from a server
+        //after 5 s, we generate a log
+        
+        this.phase = 3;
+        this.running = 2; //main loop will call end_tic
+        this.stopTime = new Date();
+        
+        if (typeof log.stopTimeStamp == "undefined") {
+            log.stopTimeStamp = this.stopTime.toDateString() + " " + this.stopTime.toTimeString();
+        }
+        
+        log.serverStopTime = -1;
+        
+        this.getTime('GMT', function(time){
+            log.serverStopTime = time;
+        });
+
+        if (typeof log.totalDuration != "undefined") log.totalDuration += this.currentTime();
+        else log.totalDuration = this.currentTime();
+
+        if (typeof log.totalBehavior != "undefined") log.totalBehavior += this.behaviors;
+        else log.totalBehavior = this.behaviors;
+        
+        if (typeof log.behaviorResets == "undefined") log.behaviorResets=0;
+        if (typeof log.timeResets == "undefined") log.timeResets=0;
+        
+        var irt = log.totalDuration;
+        
+        if (log.totalDuration > 0) {
+            irt = Math.floor(log.totalDuration / log.totalBehavior);
+        }
+        
+        log.avgTimeBtwBehavior = irt;
+        
+        log.clientVersion = Version;
+        log.ActivityCreatorVersion = options.Version;
+        
+        var innerhtml="";
+        
+        innerhtml += "<center>Creating log, please wait:<div id='timeleftdiv'></div></center><p>";
+        
+        document.getElementById("body").innerHTML = innerhtml;
+        
+        //end_tic will now be called from the main loop and will eventually take us to .endPhaseTwo to generate the log
+        
+    }
+    
+    this.end_tic = function() {
+        //this draws the please wait message
+        var now = new Date();
+        
+        var timeleftstring = 5 - Math.floor((now.getTime() - this.stopTime.getTime())/1000);
+        if ((timeleftstring <= 0) || (log.serverStopTime != -1)) {
+            this.running = 3; //stop calling end_time in main loop
+            this.endPhaseTwo();
+        } else {
+            document.getElementById("timeleftdiv").innerHTML = timeleftstring;
+        }
+    }
+    this.endPhaseTwo = function() {
+                
+        var innerhtml="";
+        
+        innerhtml += "<div id='stockinstructionsdiv'></div><p>";
+        innerhtml += "<div id='custominstructionsdiv'></div><p>";
+        innerhtml += "<div id='logdiv'></div><p>";
+        
+        document.getElementById("body").innerHTML = innerhtml;
+        
+        document.getElementById("logdiv").innerHTML = "<hr>Log:<p><textarea class=styled>" + this.generateLog() + "</textarea><hr>";
+        //We need a way to remember if the person failed or succeeded
+        
+        var success = this.TCmet();
+        
+        if (success == 1) {
+            //activity succeeded
+            if (options.Mcustomsuccess == 1) {
+                document.getElementById("custominstructionsdiv").innerHTML = options.Mcustomsuccess;
+                console.log("endPhaseTwo, success, showing custom instructions: " + options.Mcustomsuccess);
+            } else {
+                document.getElementById("stockinstructionsdiv").innerHTML = "You have completed the exercise successfully.";
+                console.log("endPhaseTwo, success, showing stock instructions.");
+            }
+        } else {
+            //show fail message
+            if (options.Mcustomfail == 1) {
+                document.getElementById("custominstructionsdiv").innerHTML = options.Mcustomfail;
+                console.log("endPhaseTwo, fail, showing custom instructions: " + options.Mcustomfail);
+            } else {
+                document.getElementById("stockinstructionsdiv").innerHTML = "You have failed the exercise.";
+                console.log("endPhaseTwo, fail, showing stock instructions.");
+            }
+        } 
+        
+
+    }
+    
+    this.generateLog = function() {
+        var logpassword = "";
+        
+        if (typeof options.logpassword != "undefined") {
+            logpassword = options.logpassword;
+        } 
+        var logstr = JSON.stringify(log);
+        var md5 = MD5(logstr);
+        
+        //encrypt logstr with the logpassword
+        logstr = logstr.encrypt_password(logpassword);
+        
+        var clearLogString = md5+logstr;
+        
+        console.log("generateLog: " + clearLogString);
+        
+        var encryptedString = "BEGINEXERCISELOG" + clearLogString.encrypt().rot13() + "ENDEXERCISELOG";
+        return encryptedString;
+    }
+    
+    this.currentTime = function() {
+        if (this.startTime != null) {
+            var now = new Date();
+            var int = parseInt((now.getTime() - this.startTime.getTime()) / 1000);
+            return int;
+        } else return -1;
+    }
+    
+    this.timeSinceLastSubmission = function() {
+
+        var now = new Date();
+        
+        if (this.promptPresentationTime == null) {
+            var int = parseInt((now.getTime() - this.startTime.getTime()) / 1000);
+            return int;
+        } else {
+            var int = parseInt((now.getTime() - this.promptPresentationTime.getTime()) / 1000);
+            return int;
+        }
+        
+        
+        return 0;
+    }
+    
+    this.tic = function() {
+        this.trialBlock.tic();
+    }
+    
+    this.TCmet = function() {
+        if (options.TC != -1) {
+            if (options.TC == 1) {
+                if (this.currentTime() >= options.TCtime) return 1;
+                return;
+            } else if (options.TC == 2) {
+                if (this.behaviors >= options.TCbehavior) return 1;
+                return;
+            } else if (options.TC == 3) {
+                if (this.currentTime() >= options.TCtime) return 1;
+                if (this.behaviors >= options.TCbehavior) return 1;
+            } else if (options.TC == 4) {
+                if ((this.currentTime() >= options.TCtime) && (this.behaviors >= options.TCbehavior)) return 1;
+            }
+        }
+        
+        return 0;
+    }
+    
+    this.behaviorFail = function() {
+        console.log("behaviorFail");
+        if (options.PRresetBehaviorOnFail == 1) {
+
+            
+            if (typeof log.behaviorResets != "undefined") log.behaviorResets++;
+            else log.behaviorResets = 1;
+            
+            if (typeof log.totalBehavior != "undefined") log.totalBehavior += this.behaviors;
+            else log.totalBehavior = this.behaviors;
+            
+            this.behaviors = 0;
+            
+            console.log("   resetting this.behaviors=" + this.behaviors);
+        }
+        if (options.PRresetTimeOnFail == 1) {
+            
+            if (typeof log.timeResets != "undefined") log.timeResets++;
+            else log.timeResets = 1;
+            
+            if (typeof log.totalDuration != "undefined") log.totalDuration += this.currentTime();
+            else log.totalDuration = this.currentTime();
+            
+            this.startTime = new Date();
+            
+            console.log("   resetting this.startTime.getTime=" + this.startTime.getTime());
+        }
+    }
+    
+    this.mantraSubmit = function(e) {
+        var characterCode;
+        if (e && e.which) {
+            // NN4 specific code
+            e = e;
+            characterCode = e.which;
+        } else {
+            e = event;
+            characterCode = e.keyCode; // IE specific code
+        }
+        if (characterCode != 13) {
+            this.typingKeyPresses++;
+            return true; 
+        } else {
+            var text = document.getElementById("mantratextbox").value;
+            if (this.mantra == text) {
+                if (this.typingKeyPresses == text.length) {
+                    console.log("mantraSubmit, correct entry!");
+                    this.newWritingPrompt();
+                    document.getElementById("mantratextbox").value = "";
+                    this.typingKeyPresses = 0;
+                    this.behaviors++;
+                    log.behaviors = this.behavior;
+                    
+                    return false;
+                } else {
+                    //user tried to paste the right answer
+                    this.behaviorsErrors++;
+                    log.behaviorsErrors = this.behaviorsErrors;
+                }
+            } else if (this.mantra != text) {
+                //user typed the wrong thing
+                this.behaviorsErrors++;
+                log.behaviorsErrors = this.behaviorsErrors;
+                this.behaviorFail();
+            } else if (this.typingKeyPresses != text.length) {
+                //user pasted the wrong thing
+                this.behaviorsErrors++;
+                log.behaviorsErrors = this.behaviorsErrors;
+                this.behaviorFail();
+            } else {
+                //just wrong
+                this.behaviorsErrors++;
+                log.behaviorsErrors = this.behaviorsErrors;
+                this.behaviorFail();
+            }
+            this.typingKeyPresses = 0;
+            console.log("mantraSubmit, incorrect entry!");
+            
+            //They hit enter
+            this.newWritingPrompt();
+            document.getElementById("mantratextbox").value = "";
+            return false;
+        }
+    }
+
+    
+    this.newWritingPrompt = function() {
+        if (typeof document.getElementById("writingtaskdiv") == "undefined") return;
+        
+        var mantra_index = Math.floor(Math.random()*options.Tmantras.length)
+        var mantra_text = options.Tmantras[mantra_index];
+        
+        var mantra = document.getElementById("mantrasamplediv");
+        
+        this.mantra = mantra_text;
+        
+        var visible_text="";
+
+        for (var i=0;i<mantra_text.length;i++) {
+            visible_text += mantra_text[i];
+            visible_text += "<a style=\"color:white;font-size:2%\">i</a>";
+        }
+        
+        //mantra.innerHTML = "<P>" + mantra_text + "</P>";
+        mantra.innerHTML = visible_text;
+        mantra.style.top = "50%";
+        mantra.style.left = "50%";
+        
+        var box = document.getElementById("writingtaskdiv");
+        var box_width = box.offsetWidth;
+        var box_height = box.offsetHeight;
+        
+        var box_x = Math.floor((window.innerWidth/2-box_width/2));  //Math.floor(Math.random() * (window.innerWidth-box_width));
+        var box_y = window.innerHeight / 2;                         //Math.floor(Math.random() * (window.innerHeight-box_height));
+        
+        document.getElementById("writingtaskdiv").style.top = box_y + "px";
+        document.getElementById("writingtaskdiv").style.left = box_x + "px";
+        
+        this.promptPresentationTime = new Date();
+        
+        console.log("newWritingPrompt at " + box_x + "," + box_y + " width/height: " + box.offsetWidth + "," + box.offsetHeight);
+    }
+    
+    this.vigilenceTic = function() {
+    }
+}
+
+var Navigation = function() {
+    var activeWindow = null;
+    
+    this.animation_xoffset = 0;
+    this.animation_on = 0;
+    this.trialBlock = new TrialBlock();
+    
+    this.drawNavBar = function() {
+        var innerhtml="";
+        
+        innerhtml += "<div id=frontanimation style=\"position:relative;top:100px;text-align: center;font-size: 250%;\">The Gift</div>";
+        innerhtml += "<div id=credit style=\"position:relative;top:120px;text-align:center;font-size: 100%;\">by elordini</div>";
+        innerhtml += "<div id=frontmenu style=\"position:absolute;visibility:true;\"></div>";
+        
+        document.getElementById("body").innerHTML = innerhtml;
+                
+        var frontmenu = document.getElementById("frontmenu");
+        
+        innerhtml = "";
+        innerhtml += "<table class='sample'>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td onmousedown='navigation.showContinueTraining()'>Continue Training</td>";
+        innerhtml +=    "</tr>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td onmousedown='navigation.showBeginNewTraining()'>Begin New Training</td>";
+        innerhtml +=    "</tr>";
+
+        innerhtml += "</table>";
+
+        frontmenu.innerHTML = innerhtml;
+        
+        var menu_width = frontmenu.offsetWidth;
+        var menu_height = frontmenu.offsetHeight;
+        var menu_x = Math.floor((window.innerWidth/2 - menu_width/2));
+        var menu_y = window.innerHeight / 2;
+        
+        frontmenu.style.top = menu_y + "px";
+        frontmenu.style.left = menu_x + "px";
+        
+        this.animation_on = 1;
+    }
+    this.showContinueTraining = function() {
+        var frontmenu = document.getElementById("frontmenu");
+        
+        innerhtml = "";
+        innerhtml += "<table class='panel'>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td onmousedown='navigation.drawNavBar()'>Back</td>";
+        innerhtml +=    "</tr>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td class='panel'>";
+        innerhtml +=        "<center><table class='undefined' border=0>";
+        innerhtml +=            "<tr>";
+        innerhtml +=                "<td>";
+        innerhtml +=                    "Enter Code:<br><textarea id=logincode class=styled></textarea>";
+        innerhtml +=                "</td>";
+        innerhtml +=            "</tr>";
+        innerhtml +=            "<tr>";
+        innerhtml +=                "<td>";
+        innerhtml +=                    "Password:<input type=text id=password>";
+        innerhtml +=                "</td>";
+        innerhtml +=            "</tr>";
+        innerhtml +=        "</table><p>";
+        innerhtml +=        "<div id=loginresult></div>";
+        innerhtml +=        "<input type=button value=Login onmousedown='navigation.loginWrapper()'></center>";
+        innerhtml +=        "</td>";
+        innerhtml +=    "</tr>";
+        innerhtml += "</table>";
+
+        frontmenu.innerHTML = innerhtml;
+        
+        var menu_width = frontmenu.offsetWidth;
+        var menu_height = frontmenu.offsetHeight;
+        var menu_x = Math.floor((window.innerWidth/2 - menu_width/2));
+        var menu_y = window.innerHeight / 2;
+        
+        frontmenu.style.top = menu_y + "px";
+        frontmenu.style.left = menu_x + "px";
+        
+        this.animation_on = 1;
+        
+    }
+    
+    this.loginWrapper = function() {
+        var result = this.login();
+        if (result != 1) {
+            document.getElementById("loginresult").innerHTML = result;
+        } else {
+            // profit??
+            document.getElementById("loginresult").innerHTML = "Login Successful! Welcome back, " + code.username + ".";
+            this.showLoginComplete();
+        }
+    }
+    
+    this.login = function() {
+        var match_array = [];
+        var str = document.getElementById("logincode").value;
+        var activitypassword = document.getElementById("password").value;
+        
+        match_array = str.match(/BEGINCODE.*ENDCODE/);
+        
+        if (match_array == null) {
+            //options.valid = 0;
+            return "ERROR: Could not find code tags!";
+        }
+        if (match_array.length > 0) {
+            str = match_array[0];
+            str = str.substr(9,str.length-7-9);
+            
+            var decodedString = str.rot13().encrypt();
+            var storedmd5 = decodedString.substr(0,32);
+            decodedString = decodedString.substr(32,decodedString.length);
+            
+            //first check to see if we can decrypt it without a password
+            var obtainedmd5;
+            
+            if (activitypassword != "") {
+                decodedString = decodedString.decrypt_password(activitypassword);
+                
+                obtainedmd5 = MD5(decodedString);
+                
+                if (obtainedmd5 == storedmd5) {
+                    code = new Object();
+                    console.log("Login");
+                    console.log("     code=" + decodedString);
+                    code = JSON.parse(decodedString);
+                    //options.valid = 1;
+                    return 1;
+                } else {
+                    return "ERROR: Code appears corrupt or incorrect password!";
+                    console.log("   incorrect password");
+                }
+            }
+            //else
+            return "ERROR: Activity appears corrupt or incorrect password!";
+            
+        } else {
+            //options.valid = 0;
+            console.log("decode: error, could not find exerciseactivity tags");
+            return "ERROR: Could not find exercise activity tags!";
+        }
+
+    }
+    
+    this.showLoginComplete = function() {
+        this.animation_on = 0;
+        document.getElementById("body").innerHTML = "<center>Welcome back, " + code.username + ".</center>";
+        training = new Training();
+        training.start();
+    }
+    
+    this.showBeginNewTraining = function() {
+        var frontmenu = document.getElementById("frontmenu");
+        
+        innerhtml = "";
+        innerhtml += "<table class='panel'>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td onmousedown='navigation.drawNavBar()'>Back</td>";
+        innerhtml +=    "</tr>";
+        innerhtml +=    "<tr>";
+        innerhtml +=        "<td class='panel'>";
+        innerhtml +=        "Welcome to The Gift!<p>";
+        innerhtml +=        "This is an ESP training program designed to measure and enhance your ";
+        innerhtml +=        "sensitivity to events outside of normal human perception. In order for your ";
+        innerhtml +=        "training to progress systematically, we need to generate a code specific to you ";
+        innerhtml +=        "that will store your progress. Each time you complete a training step, you will ";
+        innerhtml +=        "receive a new code. Each time you continue your training, this program will ";
+        innerhtml +=        "use the code you provide to adjust the training to your level. Providing a ";
+        innerhtml +=        "password will ensure that your training is private. You alone are responsible ";
+        innerhtml +=        "for keeping track of your code and password.<p>";
+        innerhtml +=        "<center><div id=newcodediv><table class='undefined' border=0>";
+        innerhtml +=            "<tr>";
+        innerhtml +=                "<td style=\"text-align:right;\">";
+        innerhtml +=                    "<right>First Name:</right>";
+        innerhtml +=                "</td>";
+        innerhtml +=                "<td style=\"text-align:left;\">";
+        innerhtml +=                    "<left><input type=text id=nametext></left>";
+        innerhtml +=                "</td>";
+        innerhtml +=            "</tr>";
+        innerhtml +=            "<tr>";
+        innerhtml +=                "<td style=\"text-align:right;\">";
+        innerhtml +=                    "<right>Password:</right>";
+        innerhtml +=                "</td>";
+        innerhtml +=                "<td style=\"text-align:left;\">";
+        innerhtml +=                    "<left><input type=text id=password1></left>";
+        innerhtml +=                "</td>";
+        innerhtml +=            "</tr>";
+        innerhtml +=            "<tr>";
+        innerhtml +=                "<td style=\"text-align:right;\">";
+        innerhtml +=                    "<right>Password (config):</right>";
+        innerhtml +=                "</td>";
+        innerhtml +=                "<td style=\"text-align:left;\">";
+        innerhtml +=                    "<left><input type=text id=password2></left>";
+        innerhtml +=                "</td>";
+        innerhtml +=            "</tr>";
+        innerhtml +=        "</table></div><p>";
+        innerhtml +=        "<div id=createnewcoderesult></div>";
+        innerhtml +=        "<input type=button value=Create onmousedown='navigation.createNewCodeWrapper()'></center>";
+        innerhtml +=        "</td>";
+        innerhtml +=    "</tr>";
+        innerhtml += "</table>";
+
+        frontmenu.innerHTML = innerhtml;
+        
+        var menu_width = frontmenu.offsetWidth;
+        var menu_height = frontmenu.offsetHeight;
+        var menu_x = Math.floor((window.innerWidth/2 - menu_width/2));
+        var menu_y = window.innerHeight / 2;
+        
+        frontmenu.style.top = menu_y + "px";
+        frontmenu.style.left = menu_x + "px";
+        
+        this.animation_on = 1;
+        
+    }
+    
+    this.createNewCodeWrapper = function() {
+        var result = this.createNewCode();
+        if (result == 1) {
+        } else {
+            document.getElementById("createnewcoderesult").innerHTML = result;
+        }
+    }
+    
+    this.createNewCode = function() {
+        var username = document.getElementById("nametext").value;
+        var password1 = document.getElementById("password1").value;
+        var password2 = document.getElementById("password2").value;
+        
+        if (password1.length <= 5 || password1 == "") {
+            return "Passwords are required and must be at least 6 characters.";
+        }
+        if (password1 != password2) {
+            return "Passwords do not match.";
+        }
+        if (username == "" || username.length < 1) {
+            return "Please enter a name.";
+        }
+        
+        code = new Object();
+        code.username = username;
+        code.level = 0;
+        code.logins = 0;
+        code.creationTime = new Date();
+        
+        var codestr = this.encodeCode(password1);
+        
+        document.getElementById("createnewcoderesult").innerHTML = "Congratulations " +username+ ", use the following code to login:<br><textarea class=styled>" + codestr + "</textarea>";
+        
+        return 1;
+    }
+    
+    this.encodeCode = function(pw) {
+        var codeString = JSON.stringify(code);
+        var md5 = MD5(codeString);
+        
+        codeString = codeString.encrypt_password(pw);
+        var clearCodeString = md5+codeString;
+        var encryptedString = "BEGINCODE" + clearCodeString.encrypt().rot13() + "ENDCODE";
+                
+        return encryptedString;
+        
+    }
+    
+    this.animation_tic = function() {
+        var ani = document.getElementById("frontanimation");
+        
+        if (typeof ani == "undefined") return;
+        
+        if (this.animation_xoffset > 20) {
+            this.animation_xoffset = 0;
+        }
+        
+        this.animation_xoffset++;
+        var radius = this.animation_xoffset*this.animation_xoffset;
+        
+        ani.style.textShadow = "#666666 "+this.animation_xoffset+"px " + this.animation_xoffset + "px "+radius+"px";
+        
+    }
+    
+    this.drawWindow = function() {
+        this.drawNavBar();
+        if (typeof this.activeWindow != undefined) {
+            this.activeWindow();
+        }
+    }
+    
+    
+}
+
+var Options = function() {
+    //Termination Criteria
+    this.TC = -1;
+    this.TCtime = -1;
+    this.TCbehavior = -1;
+    this.TCtimeShowProgress = 0;
+    this.TCbehaviorShowProgress = 0;
+    this.TCboth = -1;
+    this.TCeither = -1;
+    
+    //Pace Requirements
+    this.PR = 0;
+    this.PRmaximumTime = -1;
+    this.PRshowFailures = -1;
+    this.PRresetTimeOnFail = -1;
+    this.PRresetBehaviorOnFail = -1;
+    this.PRendTaskOnFail = -1;
+    
+    //Task
+    this.T = -1; 
+    this.Tmantras = [];
+    this.TvisualPrompts = 0;
+    this.TaudiblePrompts = 0;
+    this.TvisualAndAudiblePrompts = 0;
+    this.Tdistractors = 0;
+    this.TaverageIPI = 0;
+    this.TaverageIDI = 0;
+    
+    //Messages
+    this.M = -1;
+    this.MstockMessages = 1;
+    this.Mcustominstructions = "";
+    this.Mcustomsuccess = "";
+    this.Mcustomfail = "";
+    this.Version = Version;
+}
+
+var navigation = new Navigation();
+var options = new Options();
+var training = new Training();
+var log = new Object();             //empty object to use as a log
+var Version = 1.0;
+var code = new Object();
+var mainLoopInterval = 100;
+
+
+function mainloop() {
+    if (navigation.animation_on == 1) {
+        navigation.animation_tic();
+    }
+    
+    if (training.running == 1) {
+        training.tic();
+    } 
+
+    setTimeout("mainloop()",mainLoopInterval);
+}
+
+function init() {
+    
+	if (initSequence == 0) {
+		//Do whatever it takes to setup
+        navigation.drawNavBar();
+        initSequence = 1;
+        setTimeout("mainloop()",100);
+    } 
+    
+}
+
+window.addEventListener("load", init , true);
+</script> 
+</body> 
+</html> 
